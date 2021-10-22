@@ -1,0 +1,65 @@
+:root{
+    --bg-dark-cyan: hsl(185, 75%, 39%);
+    --heading-desturated-blue:hsl(229, 23%, 23%);
+    --greyish-blue:hsl(227, 10%, 46%);
+    --dark-gray:hsl(0, 0%, 59%);
+   
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif; 
+    font-size: 18px;
+    background-image: url('images/bg-pattern-top.svg');
+    background-position: right;
+    background-color: var(--bg-dark-cyan); 
+
+}
+h1,h2,h3,h4,h5{
+    font-weight: 700;
+    color: var(--heading-desturated-blue);
+}
+p{
+    color: var(--dark-gray);
+}
+
+/* card section */
+#card{
+    height:100vh;
+}
+#card .personCard{
+    /* border:2px solid yellowgreen; */
+    max-width: 23rem;
+    margin: 0 auto;
+
+}
+#card .personCard .upper{
+    background: url('images/bg-pattern-card.svg');
+    border-radius: 1rem 1rem 0rem 0rem;
+    width: 100%;
+    height: 10rem;
+}
+#card .personCard .lower{
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+#card .personCard .lower img{
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    top: 103px;
+    border: 0.3rem solid white;
+}
+#card .row{
+    border-top: 2px solid lightgray;
+    margin: auto;
+}
+.lower .row .col-4 small{
+font-size: 0.8rem;
+}
+/* media query */
+@media(max-width:375px){
+    .lower .row .col-4 small{
+        /* background-color: red; */
+        font-size: 0.6rem;
+    }
+}
